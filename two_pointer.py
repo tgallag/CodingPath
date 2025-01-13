@@ -16,6 +16,7 @@ def two_pointer(name):
 
 
 #w's in the chat
+#nevermind
 print(two_pointer(palindrome))
          
         
