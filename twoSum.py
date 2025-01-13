@@ -14,6 +14,30 @@
 #   else:
 #       return False
 
+'''             hashmap attempt             '''
+nums = [1, 5, 8, 12]
+target = 17
+
+h = {}
+
+def find_solution():
+    for num in nums:
+        value = target - num
+        if value in h and value != num:
+            print("i tried")
+            return(value, num)
+        h[num] = True
+    else:
+        print("yikes")
+        return False
+    
+    
+print(find_solution())
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)
+
+
 
 '''             brute force attempt             '''
 '''''
@@ -36,23 +60,3 @@ for num in nums:
 # Space Complexity: O(n)
 
 '''''
-
-'''             hashmap attempt             '''
-nums = [1, 5, 8, 12]
-target = 17
-
-h = {}
-
-def find_solution():
-    for num in nums:
-        value = target - num
-        if value in h and value != num:
-            print("i tried")
-            return(value, num)
-        h[num] = True
-    else:
-        print("yikes")
-        return False
-    
-    
-print(find_solution())
