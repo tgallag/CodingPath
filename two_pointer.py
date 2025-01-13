@@ -12,11 +12,9 @@ def two_pointer(name):
         else:
             print(name[left])
             return False
-    return True
+    return True 
 
 
 #w's in the chat
 
 print(two_pointer(palindrome))
-         
-        
