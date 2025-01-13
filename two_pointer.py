@@ -1,4 +1,4 @@
-palindrome = "hannah"
+palindrome = "racecar"
 name = palindrome
 
 def two_pointer(name):
@@ -16,7 +16,7 @@ def two_pointer(name):
 
 
 #w's in the chat
-#nevermind
+
 print(two_pointer(palindrome))
          
         
