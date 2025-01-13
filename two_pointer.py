@@ -14,6 +14,8 @@ def two_pointer(name):
             return False
     return True
 
+
+#w's in the chat
 print(two_pointer(palindrome))
          
         
