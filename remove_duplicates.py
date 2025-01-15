@@ -8,18 +8,22 @@ After modifying the array, return the length of the unique elements.
 You must do this in-place with O(1) extra space.
 '''
 
-nums = [0,0,1,1,1,2,2,3,3,4]
+nums = [0,0,1,1,1,2,2,4,4,7]
 
-h = {}
+# h = {}  - not needed
+# s = ()  - not needed
+# seen = []  - not needed
+
 
 def remove_duplicate():
-    for num in nums:
-        i= 0
-        if num == h[num]:
-            i += 1
-            print(i)
-        else:
-            print("not working")
-            break
+    write_index = 1
 
-remove_duplicate()
+    for i in range(1, len(nums)):
+        if nums[i] != nums[i - 1]:
+            nums[write_index] = nums[i]
+            write_index += 1
+    
+    return nums[:write_index]
+
+answer = remove_duplicate()
+print(answer)
