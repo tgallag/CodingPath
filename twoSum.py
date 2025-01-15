@@ -16,7 +16,7 @@
 
 '''             hashmap attempt             '''
 nums = [1, 5, 8, 12]
-target = 17
+target = 9
 
 h = {}
 
