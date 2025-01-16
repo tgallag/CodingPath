@@ -1,4 +1,4 @@
-palindrome = "hannah"
+palindrome = "racecar"
 name = palindrome
 
 def two_pointer(name):
@@ -12,11 +12,8 @@ def two_pointer(name):
         else:
             print(name[left])
             return False
-    return True
+    return True 
 
 
 #w's in the chat
-#actually nevermind
 print(two_pointer(palindrome))
-         
-        
